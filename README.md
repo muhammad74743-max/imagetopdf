@@ -1,5 +1,27 @@
-🚀 ImgConvert: Professional Image-to-PDF ConverterImgConvert is a sleek, privacy-first web application that allows users to convert multiple images into a single, high-quality PDF document directly in their browser. No uploads, no servers, and 100% private.📖 Project OverviewProblem StatementMost online PDF converters require users to upload sensitive documents to a remote server, posing a significant security risk. Additionally, many tools add watermarks or have strict file size limits.ObjectiveTo create a lightweight, open-source utility that processes files locally using JavaScript, ensuring that user data never leaves their machine while maintaining a premium "Glassmorphism" user interface.✨ Features100% Private: Processing happens entirely on the client side.Smart Scaling: Automatically fits images to A4 dimensions while maintaining the original aspect ratio.Live Previews: View and manage (add/remove) images before generating the PDF.Modern UI: A beautiful, responsive design featuring glassmorphism and intuitive drag-and-drop zones.Batch Processing: Convert multiple images into a multi-page PDF in seconds.🛠️ Technical StackHTML5: Structure and File API.CSS3: Custom properties, CSS Grid, and Backdrop-filters for the UI.JavaScript (ES6): Logic, file handling, and asynchronous processing.jsPDF: The core engine for PDF generation.🚀 Getting StartedPrerequisitesYou do not need to install any servers or dependencies. All you need is a modern web browser (Chrome, Firefox, Edge, or Safari).InstallationClone this repository or download the source code.Bashgit clone https://github.com/your-username/ImgConvert.git
-Navigate to the project folder.Open index.html in your browser.🧪 How It Works (Methodology)File Input: The user selects images which are read as DataURL via the FileReader API.Validation: The system checks for image integrity and displays a thumbnail.Calculation: The script calculates the image orientation and scales it to fit within a $210mm \times 297mm$ (A4) canvas.PDF Generation: The jsPDF library creates a document object, adds pages iteratively, and triggers a local download.📂 Project StructurePlaintextImgConvert/
-├── index.html   # Single-file solution containing HTML, CSS, and JS
-└── README.md    # Project documentation
-🛡️ LicenseDistributed under the MIT License. See LICENSE for more information.
+📝 Problem & Objective
+Users need a private way to merge images into a PDF. ImgConvert solves this by processing files entirely in the browser—no server uploads, no data leaks.
+
+🛠️ Tech Stack
+Frontend: HTML5, CSS3 (Glassmorphism), JavaScript (ES6).
+
+Library: jsPDF for PDF generation.
+
+🚀 Key Features
+100% Privacy: Files never leave your computer.
+
+Auto-Layout: Smart scaling to fit A4 pages without stretching.
+
+Live Preview: Add or remove images before converting.
+
+Fast: Instant local processing.
+
+📥 Setup
+Save the index.html file.
+
+Open it in any modern browser.
+
+Upload images and click Generate PDF.
+
+License: MIT
+
+Privacy: No data collection.
